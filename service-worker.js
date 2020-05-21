@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Top-10-Movies-App/precache-manifest.6081580cc03a2e85aca282bfe9bcc9a0.js"
+  "/Top-10-Movies-App/precache-manifest.cc4bbefbf08791c29c256fc59475c4a1.js"
 );
 
 self.addEventListener('message', (event) => {

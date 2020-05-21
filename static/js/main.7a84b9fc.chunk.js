@@ -1,2 +1,0 @@
-(this["webpackJsonptop-ten-movies-app"]=this["webpackJsonptop-ten-movies-app"]||[]).push([[0],{3:function(e,t,n){e.exports=n(9)},8:function(e,t,n){},9:function(e,t,n){"use strict";n.r(t);var a=n(0),o=n.n(a),r=n(2),c=n.n(r);n(8);var i=function(){return o.a.createElement("div",{className:"App"},o.a.createElement("h1",null,"This will be movies"))};c.a.render(o.a.createElement(o.a.StrictMode,null,o.a.createElement(i,null)),document.getElementById("root"))}},[[3,1,2]]]);
-//# sourceMappingURL=main.7a84b9fc.chunk.js.map
