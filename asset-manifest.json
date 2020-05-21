@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Top-10-Movies-App/static/css/main.36497136.chunk.css",
+    "main.js": "/Top-10-Movies-App/static/js/main.7a84b9fc.chunk.js",
+    "main.js.map": "/Top-10-Movies-App/static/js/main.7a84b9fc.chunk.js.map",
+    "runtime-main.js": "/Top-10-Movies-App/static/js/runtime-main.221f80f4.js",
+    "runtime-main.js.map": "/Top-10-Movies-App/static/js/runtime-main.221f80f4.js.map",
+    "static/js/2.9e72999d.chunk.js": "/Top-10-Movies-App/static/js/2.9e72999d.chunk.js",
+    "static/js/2.9e72999d.chunk.js.map": "/Top-10-Movies-App/static/js/2.9e72999d.chunk.js.map",
+    "index.html": "/Top-10-Movies-App/index.html",
+    "precache-manifest.6081580cc03a2e85aca282bfe9bcc9a0.js": "/Top-10-Movies-App/precache-manifest.6081580cc03a2e85aca282bfe9bcc9a0.js",
+    "service-worker.js": "/Top-10-Movies-App/service-worker.js",
+    "static/css/main.36497136.chunk.css.map": "/Top-10-Movies-App/static/css/main.36497136.chunk.css.map",
+    "static/js/2.9e72999d.chunk.js.LICENSE.txt": "/Top-10-Movies-App/static/js/2.9e72999d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.221f80f4.js",
+    "static/js/2.9e72999d.chunk.js",
+    "static/css/main.36497136.chunk.css",
+    "static/js/main.7a84b9fc.chunk.js"
+  ]
+}
