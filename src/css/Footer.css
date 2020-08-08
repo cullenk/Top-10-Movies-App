@@ -1,0 +1,14 @@
+.footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 20px 10px;
+  }
+  
+.footer img {
+width: 200px;
+}
+
+.footer p {
+color: var(--primary-color);
+}
+  

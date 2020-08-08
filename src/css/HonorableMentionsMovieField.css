@@ -1,0 +1,32 @@
+
+  .honorable-mentions-movie-field {
+    padding-top: 10px;
+    display: flex;
+    height: 100%;
+  }
+  
+  .honorable-mentions-movie-field__input {
+    margin: auto;
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    height: 10px;
+    width: 80%;
+    opacity: .8;
+    background: white;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px var(--secondary-color);
+  }
+
+  .honorable-mentions-movie-field__search {
+    overflow: scroll;
+    position: absolute;
+    width: 160px;
+    max-height: 40%;
+    background-color: var(--tertiary-color);
+    left: 18px;
+    top: 165px;
+    z-index: 10;
+  }

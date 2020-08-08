@@ -1,38 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import MoviesToAdd from './MoviesToAdd';
+import SearchField from './SearchField';
 import ChosenMovie from './ChosenMovie';
 
 export default function MovieField() {
 
     let searchTerm = 'A';
-    const [chosenMovie, setChosenMovie] = useState(() => {
-      let movieData = localStorage.getItem('chosenMoviesInStorage');
-      return movieData ? JSON.parse(movieData) : [];
-    });
-    const [chosenMovieList, setChosenMovieList] = useState([]);
+    const [chosenMovie, setChosenMovie] = useState(
+     JSON.parse(localStorage.getItem('chosenMoviesInStorage')) || '');
     const [movieList, setMovieList] = useState([]);
     const [movieDatabaseUrl, setMovieDatabaseUrl] = useState([`https://api.themoviedb.org/3/search/movie?api_key=e8876c41ca745bb2c3d29e38b0feeb4c&query=` + searchTerm]);
     const [searchContainerStatus, setSearchContainerStatus] = useState(false);
     const [movieChosen, setMovieChosen] = useState(false);
   
     useEffect(() => {
-      let movieData = localStorage.getItem('chosenMoviesInStorage');
-      return movieData ? setMoviesFromStorage() : setMovieChosen(false);
-    }, []);
-
-    function setMoviesFromStorage(){
-      for (let i = 0; i < chosenMovieList.length; i++){
-        console.log('movie');
-      }
-    }
-
-    useEffect(() => {
-      console.log(chosenMovie);
-      setChosenMovieList(prevChosenMovieList => prevChosenMovieList + chosenMovie);
-      console.log(chosenMovieList);
-      localStorage.setItem('chosenMoviesInStorage', JSON.stringify(chosenMovieList));
-    }, [chosenMovie])
+      localStorage.setItem('chosenMoviesInStorage', JSON.stringify(chosenMovie));
+      chosenMovie ? setMovieChosen(true) : setMovieChosen(false);
+    }, [chosenMovie]);
     
     useEffect(() => {
       axios.get(movieDatabaseUrl).then(res => {
@@ -82,11 +66,19 @@ export default function MovieField() {
     return (
         <div className="movie-field">
 
-            {!movieChosen ? <input onClick={toggleSearchContainer} onChange={searchForMovie} type="text" placeholder="Add Movie..." /> : null }
+            {!movieChosen ? 
+            <input 
+              className="movie-field__input"
+              onClick={toggleSearchContainer} 
+              onChange={searchForMovie} 
+              type="text" 
+              placeholder="Add Movie..." 
+            /> 
+            : null }
 
-          <div className="search-pop-up">
+          <div className="search-field">
             {movieList.map(m => ([
-            <MoviesToAdd
+            <SearchField
               key={m.id}
               id={m.id}
               title={m.title}
@@ -96,7 +88,6 @@ export default function MovieField() {
               ]))}
           </div>
               
-            
             {movieChosen ? <ChosenMovie 
             key={chosenMovie.id}
             id={chosenMovie.id}

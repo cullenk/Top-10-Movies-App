@@ -1,0 +1,23 @@
+.button__container {
+    margin: auto;
+  }
+  
+  button {
+    background: linear-gradient(0.25turn, white, #ebf8e1);
+    margin: 10px 5px;
+    width: 100px;
+    z-index: 1;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+    transition: .2s ease-in-out;
+    box-shadow: 4px 4px 4px var(--secondary-color);
+  }
+  
+  button:hover {
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+  }
+  

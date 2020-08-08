@@ -1,5 +1,5 @@
 import React from 'react'
-import movieDbLogo from './moviedblogo.svg';
+import movieDbLogo from '../images/moviedblogo.svg';
 
 export default function Footer() {
     return (

@@ -1,0 +1,24 @@
+.search-field {
+    overflow: scroll;
+    position: absolute;
+    width: 220px;
+    max-height: 40%;
+    background-color: var(--tertiary-color);
+    left: 190px;
+    top: 215px;
+    z-index: 10;
+  }
+  
+  .search-field__title-container {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .search-field__title-container:hover {
+    background: green;
+  }
+  
+  .search-field__title-option {
+    color: white;
+    padding: 5px;
+  }

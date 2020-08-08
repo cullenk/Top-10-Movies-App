@@ -1,0 +1,17 @@
+.movie-field {
+    animation: easeIn 1s ease-in-out;
+  }
+  
+  .movie-field__input {
+    margin: auto;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    height: 10px;
+    opacity: .8;
+    background: white;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px var(--secondary-color);
+  }

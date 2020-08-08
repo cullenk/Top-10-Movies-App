@@ -1,0 +1,53 @@
+.chosen-movie__container {
+    animation: easeIn 1s ease-in-out;
+    overflow: scroll;
+    display: flex;
+    margin-bottom: 40px;
+    margin: 10px;
+    height: 400px;
+    width: 600px;
+  }
+  
+  @keyframes easeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
+  
+  .chosen-movie__poster {
+    margin: 10px;
+    width: 40%;
+    z-index: 1;
+  }
+  
+  .chosen-movie__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  
+  .chosen-movie__title {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    padding: 10px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    z-index: 1;
+    font-style: italic; 
+    box-shadow: 1px 1px 2px white;
+  }
+  
+  .chosen-movie__release-date {
+    font-size: 18px;
+    z-index: 1;
+  }
+  
+  .chosen-movie__overview {
+    z-index: 1;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 0;
+   }

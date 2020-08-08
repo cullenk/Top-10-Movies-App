@@ -1,0 +1,14 @@
+.honorable-mentions-slot {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    width: 200px;
+    background: slategray;
+    margin: 15px auto;
+    box-shadow: 5px 5px 5px var(--secondary-color);
+    transition: .3s ease-in-out;
+    border: 2px solid var(--primary-color);
+  }

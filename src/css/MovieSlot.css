@@ -1,0 +1,42 @@
+.movie-slot__container {
+    animation: easeIn 1s ease-in-out;
+    margin: 5px;
+  }
+  
+  .movie-slot {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    width: 600px;
+    background: slategray;
+    margin: 15px auto;
+    box-shadow: 5px 5px 5px var(--secondary-color);
+    transition: .3s ease-in-out;
+    border: 2px solid var(--primary-color);
+  }
+  
+  .movie-slot:hover {
+    transform: scale(1.1);
+  }
+  
+  .movie-slot__clapper {
+    position: absolute;
+    top: -70px;
+    right: -50px;
+    height: 110px;
+    width: auto;
+    z-index: 5;
+  }
+  
+  .movie-slot__ranking {
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    top: -40px;
+    right: -15px;
+    z-index: 5;
+  }
+  

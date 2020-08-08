@@ -1,0 +1,18 @@
+ /* Header */
+  
+ .header {
+    height: 150px;
+    margin-top: 0;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 8px;
+  }
+  
+  .header h1 {
+    animation: easeIn 1s ease-in-out;
+    font-size: 40px;
+    color: var(--primary-color);
+    margin: 0;
+  }

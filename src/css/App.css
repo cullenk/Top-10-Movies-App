@@ -1,0 +1,121 @@
+@import 'Header.css';
+@import 'MovieList.css';
+@import 'MovieSlot.css';
+@import 'MovieField.css';
+@import 'SearchField.css';
+@import 'ChosenMovie.css';
+@import 'Buttons.css';
+@import 'HonorableMentionsList.css';
+@import 'HonorableMentionsSlot.css';
+@import 'HonorableMentionsMovieField.css';
+@import 'HonorableMentionsChosenMovie.css';
+@import 'Footer.css';
+
+/* CSS Variables */
+
+:root{
+    --main-font: 'Karla', sans-serif;
+    --primary-color: #e6e6e6;
+    --secondary-color: #333;
+    --tertiary-color: rgba(61, 115, 154, .6);
+  }
+  
+  /* Base Styling */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: darkgray;
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+  }
+ 
+  /* Media Queries  */
+  
+  @media(min-width: 1260px) {
+  
+    .movie-list {
+      grid-template-columns: auto auto;
+    }
+  
+    .honorable-mentions-slot {
+      height: 400px;
+      width: 300px;
+      margin: 15px auto;
+    }
+  
+    .honorable-mentions-chosen-movie__poster {
+      width: 85%;
+      height: 85%;
+    }
+  
+    .honorable-mentions-movie-field__search {
+      width: 160px;
+      left: 70px;
+      top: 220px;
+    }
+  }
+  
+  @media(min-width: 1500px) {
+  
+    .movie-list {
+      grid-template-columns: auto auto auto auto auto;
+    }
+  
+    .movie-slot__clapper {
+      top: -45px;
+      right: -30px;
+      height: 80px;
+    }
+    
+    .movie-slot__ranking {
+      font-size: 25px;
+      top: -25px;
+      right: -5px;
+    }
+  
+    .search-field {
+      width: 220px;
+      max-height: 40%;
+      left: 40px;
+      top: 215px;
+    }
+  
+    .chosen-movie__container {
+      position: relative;
+      text-align: center;
+      display: block;
+      margin: 0;
+      height: 400px;
+      width: 300px;
+    }
+  
+    .movie-slot, 
+    .movie-field {
+      height: 400px;
+      width: 300px;
+      margin: 15px auto;
+    }
+  
+    .movie-field {
+      display: flex;
+    }
+  
+    .chosen-movie__content {
+      margin: 0;
+      padding: 5px;
+    }
+  
+    .chosen-movie__title { 
+     margin-top: 0;
+     width: 99%;
+    }
+  
+    .chosen-movie__poster {
+      width: 70%;
+    }
+  
+  }

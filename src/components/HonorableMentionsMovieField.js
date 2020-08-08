@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import MoviesToAdd from './MoviesToAdd';
-import HonorableChosenMovie from './HonorableChosenMovie';
+import SearchField from './SearchField';
+import HonorableMentionsChosenMovie from './HonorableMentionsChosenMovie';
 
-export default function HonorableMovieField() {
+export default function HonorableMentionsMovieField() {
 
     let searchTerm = 'A';
     const [chosenMovie, setChosenMovie] = useState();
@@ -59,13 +59,21 @@ export default function HonorableMovieField() {
       }
 
     return (
-        <div className="honorable-movie-field">
+        <div className="honorable-mentions-movie-field">
 
-            {!movieChosen ? <input onClick={toggleSearchContainer} onChange={searchForMovie} type="text" placeholder="Add Movie..." /> : null }
+            {!movieChosen ? 
+            <input 
+              className="honorable-mentions-movie-field__input"
+              onClick={toggleSearchContainer} 
+              onChange={searchForMovie} 
+              type="text" 
+              placeholder="Add Movie..." 
+            /> 
+            : null }
 
-          <div className="honorable-search-pop-up">
+          <div className="honorable-mentions-movie-field__search">
             {movieList.map(m => ([
-            <MoviesToAdd
+            <SearchField
               key={m.id}
               id={m.id}
               title={m.title}
@@ -75,13 +83,15 @@ export default function HonorableMovieField() {
               ]))}
           </div>
             
-            {movieChosen ? <HonorableChosenMovie 
-            key={chosenMovie.id}
-            id={chosenMovie.id}
-            title={chosenMovie.title}
-            poster={chosenMovie.poster}
-            changeMovie={changeMovie}
-            /> : null}
+            {movieChosen ? 
+            <HonorableMentionsChosenMovie 
+              key={chosenMovie.id}
+              id={chosenMovie.id}
+              title={chosenMovie.title}
+              poster={chosenMovie.poster}
+              changeMovie={changeMovie}
+            /> 
+            : null}
 
         </div>
     )

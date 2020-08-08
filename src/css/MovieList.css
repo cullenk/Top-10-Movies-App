@@ -1,0 +1,10 @@
+.movie-list {
+    padding: 60px 10px;
+    display: grid;
+    grid-row-gap: 40px;
+    background: url("../images/film-bg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }

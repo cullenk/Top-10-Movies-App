@@ -1,0 +1,22 @@
+.honorable-mentions__container {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  
+  .honorable-mentions__container h3 {
+    letter-spacing: 3px;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 2px solid var(--secondary-color);
+    font-size: 26px;
+    margin: 0 auto;
+  }
+  
+
+  .honorable-mentions__grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  
